@@ -1,7 +1,9 @@
 <script setup>
+import { ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
+let price = ref(9.99)
 function increment() {
-  alert('hello')
+  price.value += 1
 }
 </script>
 
@@ -10,7 +12,8 @@ function increment() {
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      <button @click="increment">ボタン</button>
+      <h1>{{ price }}</h1>
+      <button @click="increment">button</button>
     </div>
   </header>
 
