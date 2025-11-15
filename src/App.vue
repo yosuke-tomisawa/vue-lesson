@@ -14,6 +14,7 @@ function increment() {
       <HelloWorld msg="You did it!" />
       <h1>{{ price }}</h1>
       <button @click="increment">button</button>
+      <p>hell!</p>
     </div>
   </header>
 
